@@ -1,0 +1,15 @@
+<div class="form-group">
+<form name="registerForm"  novalidate>
+        <div class="form-group">
+    <label for="usr"> Username:</label><input class="form-control" type="text" ng-model="newUser.username" required><br>
+    <label for="usr"> Password:</label><input class="form-control" type="text" ng-model="newUser.password" required><br>
+        <label for="usr">   Email:</label><input class="form-control" type="text" ng-model="newUser.email" required><br>
+            <label for="usr">Location:</label><input class="form-control" type="text" ng-model="newUser.location" required><br>
+                <label for="usr">Phone:</label><input class="form-control" type="text" ng-model="newUser.phone" required><br>
+                <label for="usr">  User Type:</label><br>
+                <label for="usr">Company</label><input type="radio" name="usertype" id="company"  ng-model="newUser.usertype" ng-value="'company'" required><br>
+                    <label for="usr">Job-Seeker</label><input type="radio" name="usertype" id="jobseeker"  ng-model="newUser.usertype" ng-value="'jobseeker'" required >
+    <br></div>
+    <button class="btn btn-primary" ng-click="Register(newUser)" ng-disabled="registerForm.$invalid">Save Details</button>
+</form>
+</div>

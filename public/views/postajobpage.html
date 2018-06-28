@@ -1,0 +1,10 @@
+<div class="form-group">
+<form name="postForm"  novalidate>
+    <label for="usr">Job title:<input type="text" ng-model="newUser.jobtitle" required></label><br>
+    <label for="usr">Job Description:<input type="text" ng-model="newUser.jobdescription" required></label><br>
+    <label for="usr">Keywords:<input type="text" ng-model="newUser.keywords" required></label><br>
+    <label for="usr">Location:<input type="text" ng-model="newUser.location" required></label><br>
+    <br>
+    <button class=" btn btn-success" ng-click="savejob(newUser)" ng-disabled="postForm.$invalid">Save Details</button>
+</form>
+</div>

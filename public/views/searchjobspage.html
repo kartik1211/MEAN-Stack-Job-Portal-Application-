@@ -1,0 +1,18 @@
+<div class="form-group">
+<form name="searchForm"  novalidate>
+    
+    <label for="usr"> Search by title:<input type="text" ng-model="newUser.searchbytitle" required></label><br>
+    <label for="usr"> Search By Keywords:<input type="text" ng-model="newUser.keywords" required></label><br>
+    <label for="usr">  Search By location:<input type="text" ng-model="newUser.location" required><br>
+    <button class=" btn btn-primary" ng-click="search(newUser)">Search Button</button><br>
+        <!-- Once search button is clicked it should list all the matching jobs in a list -->
+        <button class=" btn btn-warning" ng-click="reset(newUser)">Reset Button</button><br>
+        <!--	Reset button should clear the current search and job list if displayed. -->
+    <br>
+    <div id="disp">
+{{jobdetails}}
+</div>
+
+    <!-- <button ng-click="savejob(newUser)" ng-disabled="postForm.$invalid">Save Details</button> -->
+</form>
+</div>
